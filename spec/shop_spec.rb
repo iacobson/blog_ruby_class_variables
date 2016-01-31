@@ -7,7 +7,9 @@ describe 'Shop' do
     Fruit.new('bananas')
     Vegetable.new('cucumbers')
     Fruit.new('oranges')
+    puts "Shop product categories: #{Shop.categories}"
   end
+
   it 'returns the number of fruit categories' do
     expect(Fruit.categories).to eq(3)
   end
