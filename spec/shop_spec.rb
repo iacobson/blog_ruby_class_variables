@@ -8,7 +8,7 @@ describe 'Shop' do
     Vegetable.new('cucumbers')
     Fruit.new('oranges')
 
-    expect(Fruits.categories).to eq(3)
-    expect(Vegetables.categories).to eq(2)
+    expect(Fruit.categories).to eq(3)
+    expect(Vegetable.categories).to eq(2)
   end
 end
