@@ -1,38 +1,38 @@
 class Shop
-  @@categories = 0
+  @categories = 0
 
-  def self.categories
-    @@categories
+  class << self
+    attr_accessor :categories
   end
 
   def initialize(category)
     @category = category
-    @@categories += 1
+    Shop.categories += 1
   end
 end
 
 class Fruit < Shop
-  @@categories = 0
+  @categories = 0
 
-  def self.categories
-    @@categories
+  class << self
+    attr_accessor :categories
   end
 
   def initialize(category)
     @category = category
-    @@categories += 1
+    Fruit.categories += 1
   end
 end
 
 class Vegetable < Shop
-  @@categories = 0
+  @categories = 0
 
-  def self.categories
-    @@categories
+  class << self
+    attr_accessor :categories
   end
 
   def initialize(category)
     @category = category
-    @@categories += 1
+    Vegetable.categories += 1
   end
 end
